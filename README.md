@@ -15,4 +15,4 @@ void Start()
     });
 }
 ```
-![demo](http://rd25qwsml.hd-bkt.clouddn.com/github/paginantiondemo.png）
+![demo](http://rd25qwsml.hd-bkt.clouddn.com/github/paginantiondemo.png)
