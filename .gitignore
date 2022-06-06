@@ -5,3 +5,4 @@ ProjectSettings
 Library
 Logs
 Packages
+*.unitypackage
