@@ -16,7 +16,7 @@ public class PaginationButton:MonoBehaviour
 
     public void ShowLight()
     {
-        PageIndexText.gameObject.SetActive(true);
+        ClickImage.SetActive(true);
     }
 
     public void ShowShadow()

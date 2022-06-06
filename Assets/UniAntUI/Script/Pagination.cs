@@ -31,6 +31,10 @@ public class Pagination:MonoBehaviour
         this.Total = total;
         return this;
     }
+    private void Start()
+    {
+        
+    }
 
     private void Refresh()
     {

@@ -60,7 +60,7 @@ public static class Utils
             //设置光标
             if (cursor == null)
             {
-                cursor = Resources.Load<Texture2D>("Images/PointerButtonHover");
+                cursor = Resources.Load<Texture2D>("Image/PointerButtonHover");
             }
             AddEvent(gameObject, EventTriggerType.PointerEnter, (e) =>
             {
