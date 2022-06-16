@@ -3,7 +3,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 [RequireComponent(typeof(ScrollRect))]
-public class Pagination:MonoBehaviour
+public class UPagination:MonoBehaviour
 {
     public Transform content;
     public GameObject moreBtnPrefab;
@@ -16,17 +16,17 @@ public class Pagination:MonoBehaviour
 
     private Action<int> CallBack { get; set; }
     
-    public Pagination SetPageSize(int pageSize = 10)
+    public UPagination SetPageSize(int pageSize = 10)
     {
         this.PageSize = pageSize;
         return this;
     }
-    public Pagination SetPageIndex(int pageIndex = 0)
+    public UPagination SetPageIndex(int pageIndex = 0)
     {
         this.PageIndex = pageIndex;
         return this;
     }
-    public Pagination SetPageTotal(int total = 1)
+    public UPagination SetPageTotal(int total = 1)
     {
         this.Total = total;
         return this;
@@ -93,7 +93,7 @@ public class Pagination:MonoBehaviour
     private void RenderPageButton(int pageIndex)
     {
         var btn = Instantiate(btnPrefab, content);
-        var script = btn.GetComponent<PaginationButton>();
+        var script = btn.GetComponent<UPaginationButton>();
         script.SetPageIndex(pageIndex);
 
         if (pageIndex == PageIndex)
@@ -154,7 +154,7 @@ public class Pagination:MonoBehaviour
     //指定到第几页
     private void Redirect(int index)
     {
-        var list = FindObjectsOfType<PaginationButton>();
+        var list = FindObjectsOfType<UPaginationButton>();
         foreach (var item in list)
         {
             if (item.PageIndex == index)

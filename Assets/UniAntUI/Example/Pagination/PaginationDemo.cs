@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class PaginationDemo : MonoBehaviour
 {
-    private Pagination manager { get; set; }
+    private UPagination manager { get; set; }
 
     // Start is called before the first frame update
     void Start()
     {
-        manager = FindObjectOfType<Pagination>();
+        manager = FindObjectOfType<UPagination>();
         manager.SetPageIndex(0).SetPageSize(10).SetPageTotal(10).Start((e) =>
         {
             Debug.Log($"当前在第{e+1}页！");//索引从0开始

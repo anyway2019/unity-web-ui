@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 using UnityEngine.UI;
-public class PaginationButton:MonoBehaviour
+public class UPaginationButton:MonoBehaviour
 {
     public Text PageIndexText;
     public GameObject ClickImage;

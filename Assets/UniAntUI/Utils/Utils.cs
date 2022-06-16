@@ -22,6 +22,11 @@ public static class Utils
         Resources.UnloadUnusedAssets();
     }
 
+    public static Color HexToColorHtml(string hex)
+    {
+        return Color.blue;
+    }
+
     public static void AddEvent(GameObject gameObject, EventTriggerType eventTriggerType, UnityAction<BaseEventData> call)
     {
         EventTrigger.Entry pointerEvent = null;
